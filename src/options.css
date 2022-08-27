@@ -1,0 +1,17 @@
+body {
+  font-size: 16px;
+}
+
+.settings {
+  min-width: 200px;
+  padding: 0 4px 8px 4px;
+  color: #282828;
+  font-size: 1rem;
+}
+
+label {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  gap: 10px;
+}

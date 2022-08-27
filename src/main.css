@@ -1,0 +1,51 @@
+/* Thumbnail */
+.isThumbnailHidden ytd-thumbnail {
+  display: none !important;
+}
+
+ytd-feed-filter-chip-bar-renderer {
+  display: none !important;
+}
+
+#guide-content {
+  display: none !important;
+}
+
+tp-yt-app-drawer#guide {
+  display: none;
+}
+
+ytd-page-manager#page-manager {
+  margin: 0;
+}
+
+yt-icon-button#guide-button {
+  display: none;
+}
+
+img.yt-img-shadow,
+#video-title-link.ytd-rich-grid-media,
+yt-icon#logo-icon,
+ytd-badge-supported-renderer.video-badge.style-scope.ytd-rich-grid-media {
+  filter: grayscale(100%);
+}
+
+ytd-rich-section-renderer {
+  display: none !important;
+}
+
+ytd-comments {
+  display: none !important;
+}
+
+div#related {
+  display: none;
+}
+
+div#columns {
+  display: block !important;
+}
+
+div#primary {
+  margin: auto !important;
+}

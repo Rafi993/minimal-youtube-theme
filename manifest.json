@@ -1,16 +1,19 @@
 {
-	"manifest_version": 3,
-	"name": "Github dashboard",
-	"version": "0.0.1",
-	"background": {
-		"service_worker": "src/background.ts",
-		"type": "module"
-	},
-	"content_scripts": [
-		{
-			"matches": ["*://github.com/*"],
-			"js": ["src/main.tsx"],
-			"css": ["src/main.css"]
-		}
-	]
+  "manifest_version": 3,
+  "name": "Calm Youtube",
+  "description": "Make youtube boring and calm",
+  "version": "0.0.1",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "run_at": "document_end",
+      "css": ["src/main.css"],
+      "js": ["src/main.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Options",
+    "default_popup": "src/options.html"
+  }
 }

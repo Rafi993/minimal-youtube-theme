@@ -1,4 +1,4 @@
-# Calm youtube
+# Minimal Youtube theme
 
 A simple chrome extension to make youtube boring and less distractive.
 

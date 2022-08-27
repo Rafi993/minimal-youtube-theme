@@ -42,11 +42,8 @@ chrome.storage.sync.get(Object.keys(defaultConfig), (data) => {
   run(data);
 });
 
-chrome.storage.onChanged.addListener((changes) => {
-  let config = {};
-  for (key of Object.keys(changes)) {
-    config[key] = changes[key].newValue;
-  }
-
-  run(config);
+chrome.storage.onChanged.addListener(() => {
+  chrome.storage.sync.get(Object.keys(defaultConfig), (data) => {
+    run(data);
+  });
 });

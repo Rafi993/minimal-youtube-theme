@@ -3,4 +3,5 @@ export const defaultConfig = {
   isGrayScale: false,
   hideRecommendation: true,
   hideComments: true,
+  hideNavDraw: true,
 };

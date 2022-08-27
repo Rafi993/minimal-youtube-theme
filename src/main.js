@@ -28,7 +28,11 @@ const run = async (config) => {
     removeClassList.push("hideComments");
   }
 
-  console.log("removeClassList", removeClassList);
+  if (config.hideNavDraw) {
+    addClassList.push("hideNavDraw");
+  } else {
+    removeClassList.push("hideNavDraw");
+  }
 
   document.body.classList.add(...addClassList);
   document.body.classList.remove(...removeClassList);

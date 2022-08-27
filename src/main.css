@@ -7,7 +7,6 @@ body.isGrayScale {
   filter: grayscale(100%);
 }
 
-.hideRecommendation #guide-content,
 .hideRecommendation div#related,
 .hideRecommendation ytd-feed-filter-chip-bar-renderer,
 .hideRecommendation ytd-rich-section-renderer {
@@ -25,14 +24,12 @@ body.isGrayScale {
   display: none !important;
 }
 
-tp-yt-app-drawer#guide {
+.hideNavDraw tp-yt-app-drawer#guide,
+.hideNavDraw #guide-content,
+.hideNavDraw yt-icon-button#guide-button {
   display: none;
 }
 
-ytd-page-manager#page-manager {
+.hideNavDraw ytd-page-manager#page-manager {
   margin: 0;
-}
-
-yt-icon-button#guide-button {
-  display: none;
 }

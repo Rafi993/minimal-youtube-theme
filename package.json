@@ -7,7 +7,10 @@
     "build": "parcel build manifest.json"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rafi993",
+  "repository": {
+    "url": "https://github.com/Rafi993/calm-youtube"
+  },
   "license": "MIT",
   "devDependencies": {
     "@parcel/config-webextension": "^2.7.0",

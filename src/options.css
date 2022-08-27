@@ -3,21 +3,22 @@ body {
 }
 
 .settings {
-  min-width: 200px;
+  min-width: 240px;
   padding: 0 4px 8px 4px;
   color: #282828;
   font-size: 1rem;
 }
 
 label {
-  display: flex;
   font-size: 1rem;
+  display: grid;
   align-items: center;
   gap: 10px;
+  grid-template-columns: 180px 1fr;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 6;
+  gap: 15;
 }

@@ -1,7 +1,7 @@
 {
-  "name": "calm-youtube",
+  "name": "minimal-youtube-theme",
   "version": "1.0.0",
-  "description": "Making youtube less distracting",
+  "description": "minimal youtube theme",
   "scripts": {
     "start": "parcel watch manifest.json --host localhost",
     "build": "parcel build manifest.json"

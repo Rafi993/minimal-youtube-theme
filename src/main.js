@@ -16,6 +16,18 @@ const run = async (config) => {
     removeClassList.push("isGrayScale");
   }
 
+  if (config.hideRecommendation) {
+    addClassList.push("hideRecommendation");
+  } else {
+    removeClassList.push("hideRecommendation");
+  }
+
+  if (config.hideComments) {
+    addClassList.push("hideComments");
+  } else {
+    removeClassList.push("hideComments");
+  }
+
   console.log("removeClassList", removeClassList);
 
   document.body.classList.add(...addClassList);

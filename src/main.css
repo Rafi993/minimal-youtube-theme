@@ -3,7 +3,12 @@
   display: none !important;
 }
 
-body.isGrayScale {
+.isGrayScale img.yt-img-shadow,
+.isGrayScale #video-title-link,
+.isGrayScale yt-icon#logo-icon,
+.isGrayScale img,
+.isGrayScale video,
+.isGrayScale #subscribe-button {
   filter: grayscale(100%);
 }
 

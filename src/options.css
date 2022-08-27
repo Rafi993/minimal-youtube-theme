@@ -15,3 +15,9 @@ label {
   align-items: center;
   gap: 10px;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6;
+}

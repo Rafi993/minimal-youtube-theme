@@ -1,16 +1,28 @@
+import { defaultConfig } from "./defaultConfig";
+
 const run = async (config) => {
-  try {
-    if (config.isThumbnailHidden) {
-      document.body.classList.add("isThumbnailHidden");
-    } else {
-      document.body.classList.remove("isThumbnailHidden");
-    }
-  } catch (error) {
-    console.log("error", error);
+  const addClassList = [];
+  const removeClassList = [];
+
+  if (config.isThumbnailHidden) {
+    addClassList.push("isThumbnailHidden");
+  } else {
+    removeClassList.push("isThumbnailHidden");
   }
+
+  if (config.isGrayScale) {
+    addClassList.push("isGrayScale");
+  } else {
+    removeClassList.push("isGrayScale");
+  }
+
+  console.log("removeClassList", removeClassList);
+
+  document.body.classList.add(...addClassList);
+  document.body.classList.remove(...removeClassList);
 };
 
-chrome.storage.sync.get(["isThumbnailHidden"], (data) => {
+chrome.storage.sync.get(Object.keys(defaultConfig), (data) => {
   run(data);
 });
 

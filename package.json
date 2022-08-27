@@ -1,0 +1,23 @@
+{
+	"name": "github-dashboard",
+	"version": "1.0.0",
+	"description": "Display dashboard in your Github home page",
+	"scripts": {
+		"start": "parcel watch manifest.json --host localhost",
+		"build": "parcel build manifest.json"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"@parcel/config-webextension": "^2.7.0",
+		"@types/react": "^18.0.17",
+		"@types/react-dom": "^18.0.6",
+		"parcel": "^2.7.0",
+		"parcel-plugin-static-files-copy": "^2.6.0"
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	}
+}

@@ -4,35 +4,13 @@ const run = async (config) => {
   const addClassList = [];
   const removeClassList = [];
 
-  if (config.isThumbnailHidden) {
-    addClassList.push("isThumbnailHidden");
-  } else {
-    removeClassList.push("isThumbnailHidden");
-  }
-
-  if (config.isGrayScale) {
-    addClassList.push("isGrayScale");
-  } else {
-    removeClassList.push("isGrayScale");
-  }
-
-  if (config.hideRecommendation) {
-    addClassList.push("hideRecommendation");
-  } else {
-    removeClassList.push("hideRecommendation");
-  }
-
-  if (config.hideComments) {
-    addClassList.push("hideComments");
-  } else {
-    removeClassList.push("hideComments");
-  }
-
-  if (config.hideNavDraw) {
-    addClassList.push("hideNavDraw");
-  } else {
-    removeClassList.push("hideNavDraw");
-  }
+  Object.keys(config).forEach((key) => {
+    if (config[key]) {
+      addClassList.push(key);
+    } else {
+      removeClassList.push(key);
+    }
+  });
 
   document.body.classList.add(...addClassList);
   document.body.classList.remove(...removeClassList);

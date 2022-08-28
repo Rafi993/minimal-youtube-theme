@@ -1,5 +1,5 @@
-/* Thumbnail */
-.isThumbnailHidden ytd-thumbnail {
+.isThumbnailHidden ytd-thumbnail,
+.isThumbnailHidden ytd-playlist-video-thumbnail-renderer {
   display: none !important;
 }
 
@@ -9,7 +9,8 @@ body.isGrayScale {
 
 .hideRecommendation div#related,
 .hideRecommendation ytd-feed-filter-chip-bar-renderer,
-.hideRecommendation ytd-rich-section-renderer {
+.hideRecommendation ytd-rich-section-renderer,
+.hideRecommendation ytd-mini-guide-renderer {
   display: none !important;
 }
 
@@ -26,7 +27,8 @@ body.isGrayScale {
 
 .hideNavDraw tp-yt-app-drawer#guide,
 .hideNavDraw #guide-content,
-.hideNavDraw yt-icon-button#guide-button {
+.hideNavDraw yt-icon-button#guide-button,
+.hideNavDraw ytd-mini-guide-renderer {
   display: none;
 }
 
@@ -36,4 +38,12 @@ body.isGrayScale {
 
 .hideNavDraw #contents.ytd-rich-grid-renderer {
   padding-top: 60px;
+}
+
+.hideMetaData #metadata-line,
+.hideMetaData .metadata-snippet-container,
+.hideMetaData .metadata-snippet-text,
+.hideMetaData .badge,
+.hideMetaData #expandable-metadata {
+  display: none !important;
 }

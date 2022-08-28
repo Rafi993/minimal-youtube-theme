@@ -4,4 +4,5 @@ export const defaultConfig = {
   hideRecommendation: true,
   hideComments: true,
   hideNavDraw: true,
+  hideMetaData: false,
 };

@@ -33,3 +33,7 @@ body.isGrayScale {
 .hideNavDraw ytd-page-manager#page-manager {
   margin: 0;
 }
+
+.hideNavDraw #contents.ytd-rich-grid-renderer {
+  padding-top: 60px;
+}

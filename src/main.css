@@ -10,7 +10,8 @@ body.isGrayScale {
 .hideRecommendation div#related,
 .hideRecommendation ytd-feed-filter-chip-bar-renderer,
 .hideRecommendation ytd-rich-section-renderer,
-.hideRecommendation ytd-mini-guide-renderer {
+.hideRecommendation ytd-mini-guide-renderer,
+.hideRecommendation ytd-reel-shelf-renderer {
   display: none !important;
 }
 
@@ -37,8 +38,10 @@ body.isGrayScale {
 }
 
 .hideNavDraw #contents.ytd-rich-grid-renderer,
-.hideNavDraw div#columns {
-  padding-top: 60px;
+.hideNavDraw div#columns,
+.hideNavDraw
+  ytd-channel-video-player-renderer.style-scope.ytd-item-section-renderer {
+  padding-top: 65px;
 }
 
 .hideMetaData #metadata-line,

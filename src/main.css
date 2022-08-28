@@ -36,7 +36,8 @@ body.isGrayScale {
   margin: 0;
 }
 
-.hideNavDraw #contents.ytd-rich-grid-renderer {
+.hideNavDraw #contents.ytd-rich-grid-renderer,
+.hideNavDraw div#columns {
   padding-top: 60px;
 }
 

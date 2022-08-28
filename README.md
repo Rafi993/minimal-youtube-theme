@@ -6,9 +6,9 @@ A simple chrome extension to make youtube boring and less distractive.
 
 ## How does it look?
 
-<img src="screenshots/comments.png" alt="Logo" width="150"/>
-<img src="screenshots/gray_scale.png" alt="Logo" width="150"/>
-<img src="screenshots/listing.png" alt="Logo" width="150"/>
+<img src="screenshots/comments.png" alt="Logo" width="700"/>
+<img src="screenshots/gray_scale.png" alt="Logo" width="700"/>
+<img src="screenshots/listing.png" alt="Logo" width="700"/>
 
 ## To run
 

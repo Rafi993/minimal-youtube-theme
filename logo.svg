@@ -7,8 +7,8 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
    sodipodi:docname="logo.svg"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -40,31 +40,35 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#1a1a1a;stroke-width:2.185"
+       style="fill:#1a1a1a;stroke-width:2.22975"
        id="rect920"
-       width="53.83749"
-       height="55.172306"
+       width="55.617001"
+       height="55.617001"
        x="38.26466"
        y="64.960938"
-       rx="1.9"
-       ry="27.903999" />
+       inkscape:export-filename="../icon16.png"
+       inkscape:export-xdpi="7.3071184"
+       inkscape:export-ydpi="7.3071184" />
     <rect
-       style="fill:#ff5555;stroke-width:2.84244"
+       style="fill:#ff5555;stroke-width:2.90065"
        id="rect391-3"
-       width="9.7886353"
-       height="39.154537"
-       x="70.362541"
-       y="72.777573"
-       rx="0.36666667"
-       ry="4.4044433" />
+       width="10.112182"
+       height="39.470127"
+       x="71.423485"
+       y="72.840576"
+       rx="0.37878624"
+       ry="4.4399433" />
     <rect
-       style="fill:#ff5555;stroke-width:2.84244"
+       style="fill:#ff5555;stroke-width:2.90065"
        id="rect391-3-6"
-       width="9.7886353"
-       height="39.154537"
-       x="49.73597"
-       y="72.524887"
-       rx="0.36666667"
-       ry="4.4044433" />
+       width="10.112182"
+       height="39.470127"
+       x="50.115135"
+       y="72.585854"
+       rx="0.37878624"
+       ry="4.4399433"
+       inkscape:export-filename="../icon128.png"
+       inkscape:export-xdpi="60.389149"
+       inkscape:export-ydpi="60.389149" />
   </g>
 </svg>

@@ -15,13 +15,6 @@ body.isGrayScale {
   display: none !important;
 }
 
-.hideRecommendation div#columns {
-  display: block !important;
-}
-.hideRecommendation div#primary {
-  margin: auto !important;
-}
-
 .hideComments ytd-comments {
   display: none !important;
 }

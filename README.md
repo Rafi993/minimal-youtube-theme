@@ -10,3 +10,7 @@ A simple chrome extension to make youtube boring and less distractive.
 $ pnpm
 $ pnpm start
 ```
+
+## Similar extensions
+
+- [Minimal theme for twitter](https://github.com/thomaswang/minimal-twitter)

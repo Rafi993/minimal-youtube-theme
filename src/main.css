@@ -15,7 +15,8 @@ body.isGrayScale {
   display: none !important;
 }
 
-.hideComments ytd-comments {
+.hideComments ytd-comments,
+.hideComments #comment-teaser {
   display: none !important;
 }
 

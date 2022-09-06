@@ -32,8 +32,7 @@ body.isGrayScale {
 
 .hideNavDraw #contents.ytd-rich-grid-renderer,
 .hideNavDraw div#columns,
-.hideNavDraw
-  ytd-channel-video-player-renderer.style-scope.ytd-item-section-renderer {
+.hideNavDraw ytd-two-column-browse-results-renderer[page-subtype="channels"] {
   padding-top: 65px;
 }
 

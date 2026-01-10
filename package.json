@@ -1,6 +1,6 @@
 {
   "name": "minimal-youtube-theme",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "minimal youtube theme",
   "scripts": {
     "start": "parcel watch manifest.json --host localhost",

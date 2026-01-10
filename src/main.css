@@ -1,5 +1,6 @@
 .isThumbnailHidden ytd-thumbnail,
-.isThumbnailHidden ytd-playlist-video-thumbnail-renderer {
+.isThumbnailHidden ytd-playlist-video-thumbnail-renderer,
+.isThumbnailHidden yt-thumbnail-view-model {
   display: none !important;
 }
 

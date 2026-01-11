@@ -1,11 +1,11 @@
 .isThumbnailHidden ytd-thumbnail,
 .isThumbnailHidden ytd-playlist-video-thumbnail-renderer,
 .isThumbnailHidden yt-thumbnail-view-model {
-  display: none !important;
+    display: none !important;
 }
 
 body.isGrayScale {
-  filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
 }
 
 .hideRecommendation div#related,
@@ -13,29 +13,33 @@ body.isGrayScale {
 .hideRecommendation ytd-rich-section-renderer,
 .hideRecommendation ytd-mini-guide-renderer,
 .hideRecommendation ytd-reel-shelf-renderer {
-  display: none !important;
+    display: none !important;
 }
 
 .hideComments ytd-comments,
 .hideComments #comment-teaser {
-  display: none !important;
+    display: none !important;
 }
 
 .hideNavDraw tp-yt-app-drawer#guide,
 .hideNavDraw #guide-content,
 .hideNavDraw yt-icon-button#guide-button,
 .hideNavDraw ytd-mini-guide-renderer {
-  display: none;
+    display: none;
 }
 
 .hideNavDraw ytd-page-manager#page-manager {
-  margin: 0;
+    margin: 0;
 }
 
 .hideNavDraw #contents.ytd-rich-grid-renderer,
 .hideNavDraw div#columns,
 .hideNavDraw ytd-two-column-browse-results-renderer[page-subtype="channels"] {
-  padding-top: 65px;
+    padding-top: 100px;
+}
+
+ytd-player {
+    padding-top: 70px;
 }
 
 .hideMetaData #metadata-line,
@@ -43,5 +47,5 @@ body.isGrayScale {
 .hideMetaData .metadata-snippet-text,
 .hideMetaData .badge,
 .hideMetaData #expandable-metadata {
-  display: none !important;
+    display: none !important;
 }

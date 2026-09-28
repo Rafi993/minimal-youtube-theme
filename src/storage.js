@@ -1,5 +1,4 @@
 import throttle from "lodash.throttle";
-import { defaultConfig } from "./defaultConfig";
 
 export const setConfig = throttle(async (data) => {
   const promise = new Promise((resolve, reject) => {

@@ -17,11 +17,7 @@ const run = async (config) => {
 };
 
 chrome.storage.sync.get(Object.keys(defaultConfig), (data) => {
-  if (Object.keys(data).length === 0) {
-    run(defaultConfig);
-  } else {
-    run({ ...defaultConfig, ...data });
-  }
+  run({ ...defaultConfig, ...data });
 });
 
 chrome.storage.onChanged.addListener(() => {

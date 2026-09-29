@@ -1,45 +1,70 @@
-.isThumbnailHidden ytd-thumbnail,
-.isThumbnailHidden ytd-playlist-video-thumbnail-renderer,
-.isThumbnailHidden yt-thumbnail-view-model {
-    display: none !important;
+.isThumbnailHidden {
+  & yt-thumbnail-view-model,
+  & ytd-playlist-video-thumbnail-renderer,
+  & yt-thumbnail-view-model,
+  & ytd-thumbnail > #thumbnail:has(yt-image) {
+    background-color: var(
+      --yt-sys-color-baseline--additive-background
+    ) !important;
+
+    & img {
+      opacity: 0 !important;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+  & div.ytp-modern-videowall-still-image {
+    background-image: none !important;
+    background-color: var(
+      --yt-sys-color-baseline--additive-background
+    ) !important;
+  }
 }
 
 body.isGrayScale {
-    filter: grayscale(100%) !important;
+  filter: grayscale(100%) !important;
 }
 
-.hideRecommendation div#related,
-.hideRecommendation ytd-feed-filter-chip-bar-renderer,
-.hideRecommendation ytd-rich-section-renderer,
-.hideRecommendation ytd-mini-guide-renderer,
-.hideRecommendation ytd-reel-shelf-renderer {
+.hideRecommendation {
+  & div#related,
+  & ytd-feed-filter-chip-bar-renderer,
+  & ytd-rich-section-renderer,
+  & ytd-mini-guide-renderer,
+  & ytd-reel-shelf-renderer {
     display: none !important;
+  }
+
+  & div#frosted-glass {
+    height: var(--ytd-toolbar-height, 56px) !important;
+  }
+}
+
+.hideShorts ytd-rich-shelf-renderer[is-shorts],
+.hideShorts ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+.hideShorts ytd-reel-shelf-renderer,
+.hideShorts grid-shelf-view-model:has(ytm-shorts-lockup-view-model) {
+  display: none !important;
 }
 
 .hideComments ytd-comments,
 .hideComments #comment-teaser {
-    display: none !important;
+  display: none !important;
 }
 
 .hideNavDraw tp-yt-app-drawer#guide,
 .hideNavDraw #guide-content,
 .hideNavDraw yt-icon-button#guide-button,
 .hideNavDraw ytd-mini-guide-renderer {
-    display: none;
+  display: none;
 }
 
 .hideNavDraw ytd-page-manager#page-manager {
-    margin: 0;
+  margin: 0;
 }
 
 .hideNavDraw #contents.ytd-rich-grid-renderer,
 .hideNavDraw div#columns,
 .hideNavDraw ytd-two-column-browse-results-renderer[page-subtype="channels"] {
-    padding-top: 100px;
-}
-
-ytd-player {
-    padding-top: 70px;
+  padding-top: 100px;
 }
 
 .hideMetaData #metadata-line,
@@ -47,5 +72,5 @@ ytd-player {
 .hideMetaData .metadata-snippet-text,
 .hideMetaData .badge,
 .hideMetaData #expandable-metadata {
-    display: none !important;
+  display: none !important;
 }
